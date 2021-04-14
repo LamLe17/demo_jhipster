@@ -27,6 +27,8 @@
                     <th scope="col"></th>
                 </tr>
             </thead>
+
+            
             <tbody *ngIf="users">
                 <tr *ngFor="let user of users; trackBy: trackIdentity">
                     <td><a [routerLink]="['./', user.login, 'view']">{{ user.id }}</a></td>
